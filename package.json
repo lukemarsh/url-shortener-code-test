@@ -1,0 +1,57 @@
+{
+  "name": "url-shortener-code-test",
+  "version": "1.0.0",
+  "description": "We'd like you to create a URL shortening service. - It should have a route where you can send a POST request with a URL in the body, which returns a short URL. - When you send a GET request to a previously returned URL, it should redirect to the POSTed URL. - We'd also like a simple frontend that can create and display shortened URLs without reloading the page. - For simplicity, don't worry about persisting the URLs between restarts (ie, we don't need it to talk to an external database).",
+  "scripts": {
+    "start": "node src/server",
+    "lint": "eslint --ignore-path .gitignore -- .",
+    "test": "mocha \"src/tests/**/*.test.js\" --compilers js:babel-core/register,js:./src/testutils/env.js --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukemarsh/url-shortener-code-test.git"
+  },
+  "author": "Luke Marsh <luke@theappbusiness.com> (http://www.theappbusiness.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukemarsh/url-shortener-code-test/issues"
+  },
+  "homepage": "https://github.com/lukemarsh/url-shortener-code-test#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-redux": "^5.0.1",
+    "react-router": "^3.0.0",
+    "react-router-redux": "^4.0.7",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0",
+    "shortid": "^2.2.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "enzyme": "^2.6.0",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "expect": "^1.20.2",
+    "html-webpack-plugin": "^2.24.1",
+    "jsdom": "^9.9.1",
+    "mocha": "^3.2.0",
+    "postcss-loader": "^1.2.1",
+    "react-addons-test-utils": "^15.4.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-hot-middleware": "^2.13.2"
+  }
+}

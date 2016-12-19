@@ -1,0 +1,9 @@
+{
+  "presets": [
+    [
+      "latest"
+    ],
+    "react",
+    "stage-0"
+  ]
+}
